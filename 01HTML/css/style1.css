@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fefeff;
+    text-align: center;
+}
+
+html, body{
+
+    background-color: #bebebe;
+}
+
+.main-container{
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    margin:2rem;
+    /*padding: 1rem;*/
+    background-color:#ffffff;
+
+}
+
+nav, section, footer, aside, article{
+
+    border: 2px solid #525050;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+article, aside{
+    width: 40%;
+    display: inline-block;
+    height: 300px;
+    background-color: #8f8f8f;
+}
+
+nav, footer, section{
+
+    background-color: darkgrey;
+}
