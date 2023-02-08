@@ -1,62 +1,28 @@
+//lafuncion de validacion
 
-function validar(formulario){
-    if(formulario.nombre.value.length < 3){
-        alert("Escriba por lo menos 3 caracteres en el campo nombre");
-        formulario.nombre.focus();
-    }
-    var checkok ="QWERTYUIOPASDFGHJKLÑZXCVBNM" + 
-    "qwertyuiopasdfghjklñzxcvbnm";
-    var checkString = formulario.nombre.value;
-    var todoesvalido = true;
-    for(var i = 0; i< checkString.length;i++){
-        var ch = checkString.charAT(i);
-        for(var j =0; j< checkok.length; j++){
-            if(ch == checkok.charAt(j)){
-                break;
-            }
-        }
-        if(j == checkok.length){
-            todoesvalido = false;
-            break;
-        }
+function validarn(e){
+    var teclado = (document.all)?e.keyCode : e.which;
 
-    }
-    if(!todoesvalido){
-        alert("Escriba unicamente ltrass en el campo nombre");
-        formulario.nombre.focus();
-        return false;
-    }
-    var checkok ="1234567890";
-    var checkString = formulario.edad.value;
-    var todoesvalido = true;
-    for(var i = 0; i< checkString.length;i++){
-        var ch = checkString.charAT(i);
-        for(var j =0; j< checkok.length; j++){
-            if(ch == checkok.charAt(j)){
-                break;
-            }
-        }
-        if(j == checkok.length){
-            todoesvalido = false;
-            break;
-        }
+    if(teclado == 8) return true;
 
-    }
-    if(!todoesvalido){
-        alert("Escriba unicamente ltrass en el campo edad");
-        formulario.edad.focus();
-        return false;
-    }
+    var patron = /[0-9\d .]/;
 
-    var txt = formulario.correo.value;
+    var codigo = String.fromCharCode(teclado);
 
-    var b = /^[^@\s]+[^@\.\]+(\.[^@\.\s]+)+$/;
-
-    alert("Email" + (b.test(txt)? " " : " no")+ "valio");
-
-    return b.test;
-    
+    return patron.test(codigo);
 }
 
+function interes(){
+    var valor = document.formulario.cantidad.value;
+    var resul = parseInt(valor);
+    var interes = resul*0.02;
+    var total = interes * resul;
 
+    document.formulario.sueldoI.value= "$" + total;
+}
 
+function borrardatos(){
+
+    document.formulario.cantidad.value= "";
+    document.formulario.sueldoI.value= "";
+}
