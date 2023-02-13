@@ -1,4 +1,7 @@
-
+*{
+    margin: auto;
+    padding: auto;
+}
 
 body{
     background-image: url(../images/clay-banks-u27Rrbs9Dwc-unsplash.jpg);
@@ -12,6 +15,18 @@ body{
     align-content: center;
 }
 
-.div{
-    color: rgb(255, 255, 255);
+.ul{
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
 }
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #ffffff;
+  }

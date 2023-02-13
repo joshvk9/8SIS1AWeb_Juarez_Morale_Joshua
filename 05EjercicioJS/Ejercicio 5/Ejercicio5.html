@@ -4,11 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicios JS</title>
     <link rel="stylesheet" href="Diseño.css/diseño.css">
-
+    <script src="JS/Ejercicio 5.js" ></script>
 </head>
 <body>
+    <br>
+    <div class="container" >
+        <h1>
+            Bienenvidos Al Ejercicio 5
+        </h1>
+        <h2>
+            5) Un maestro desea saber que porcentaje de hombre y que pocentaje de mujeres hay en un grupo de estudiantes
+        </h2>
+    </div>
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Porcentaje de mujeres y hombres</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script>
+ 
+function algoritmo()
+{
+    let estudiantes, genero, hombres, mujeres;
+    let porcentaje_hombres, porcentaje_mujeres;
+    genero = parseInt (document.formulario1.genero.value);
+    if(genero==1)
+        mujeres=mujeres+1;
+    else
+        hombres=hombres+1;
+}
+ 
+    </script>
+    </head>
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="genero">Selecciona el valor de genero:</label>
+                        </td>
+                        <td>
+                            <select name="genero" required="required">
+                                <option value="1">Mujer</option>
+                                <option value="2">Hombre</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr alignc ="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Procesar" type="button" onclick="algoritmo();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
     
+   
 </body>
 </html>

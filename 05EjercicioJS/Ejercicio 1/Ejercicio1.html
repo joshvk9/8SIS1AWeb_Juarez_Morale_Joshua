@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios JS</title>
     <link rel="stylesheet" href="Diseño.css/diseño.css">
+
     <script src="JS/Ejercicio 1.js" ></script>
 </head>
 <body>
     <br>
     <div class="container" >
+        <h1  style="text-align:center">
+            Bienenvidos Al Ejercicio 1
+        </h1>
+        <h2  style="text-align:center">
+            supongamos que un individuo desea invertir su capital
+            en un banco y  desea saber cuanto dinero ganara despues 
+            de un mes si el banco paga a razon de 2% mensual.
+        </h2 >
         <form method="get" name="formulario" action="">
-            <label> Formulario para el calculo de inversion de 
-                capital al 2% mensual </label>
+            <label> <h2  style="text-align:center">Formulario para el calculo de inversion de 
+                capital al 2% mensual </h2></label>
                 <div class="table-content" >
                     <table>
                         <tr>
-                            <td>Introduce la cantidad que deseas invertir</td>
+                            <td><h3  style="text-align:center">Introduce la cantidad que deseas invertir</h3></td>
                             <td>
                                 <input type="text" name="cantidad" 
                                 onkeypress="return validarn(event)">
@@ -30,6 +39,8 @@
                                 name="enviar" onclick="interes()" >
                             </td>
                         </tr>
+                        <br>
+                        
                         <tr>
                             <td>Su saldo total con el interes al 2% 
                                 mensual es de:</td>
@@ -50,6 +61,5 @@
                 </div>
         </form>
     </div>
-    <script src="JS/interes.js" ></script>
 </body>
 </html>
